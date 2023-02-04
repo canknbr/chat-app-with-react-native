@@ -4,20 +4,16 @@ import ChatListItem from '../../components/ChatListItem';
 import chats from '../../../assets/data/chats.json';
 export default function ChatsScreen() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View
+      style={{
+        paddingTop: 50,
+      }}
+    >
       <FlatList
         data={chats}
         renderItem={({ item }) => <ChatListItem chat={item} />}
         keyExtractor={item => item.id}
       />
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
