@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, FlatList, View, SafeAreaView } from 'react-native';
-import ChatListItem from '../../components/ChatListItem';
+import ChatListItem from '../../components/ContactListItem';
 import chats from '../../../assets/data/chats.json';
-export default function ChatsScreen() {
+const Contacts = () => {
   return (
     <FlatList
       data={chats}
@@ -13,4 +12,6 @@ export default function ChatsScreen() {
       }}
     />
   );
-}
+};
+
+export default Contacts;
