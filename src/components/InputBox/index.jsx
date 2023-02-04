@@ -17,8 +17,6 @@ const InputBox = () => {
         style={styles.textInput}
         placeholder="type your message"
         autoCapitalize="none"
-        autoCorrect={false}
-        autoComplete="off"
       />
       <View style={styles.send}>
         <MaterialIcons

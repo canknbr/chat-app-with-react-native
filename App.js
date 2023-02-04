@@ -2,11 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, FlatList, View, SafeAreaView } from 'react-native';
 import ChatsScreen from './src/screens/ChatsScreen';
 import ChatScreen from './src/screens/ChatScreen';
+import Navigator from './src/navigation';
 const App = () => {
   return (
     <View style={styles.container}>
       {/* <ChatsScreen /> */}
-      <ChatScreen />
+      <Navigator />
       <StatusBar style="auto" />
     </View>
   );

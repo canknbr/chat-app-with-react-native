@@ -6,6 +6,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     margin: 5,
     marginHorizontal: 10,
+    paddingVertical: 10,
   },
   textInput: {
     flex: 1,
