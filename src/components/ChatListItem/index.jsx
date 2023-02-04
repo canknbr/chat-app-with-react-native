@@ -6,7 +6,7 @@ import styles from './styles';
 const ChatListItem = ({ chat } = {}) => {
   const {
     user: { name, image },
-    lastMessage,
+    lastMessage: { text },
     createdAt,
   } = chat;
   return (
@@ -22,10 +22,10 @@ const ChatListItem = ({ chat } = {}) => {
           <Text style={styles.name} numberOfLines={1}>
             {name}
           </Text>
-          <Text style={styles.text}>{dayjs(createdAt).from()}</Text>
+          <Text style={styles.text}>{dayjs(createdAt).fromNow(true)}</Text>
         </View>
         <Text style={styles.text} numberOfLines={2}>
-          {lastMessage.text}
+          {text}
         </Text>
       </View>
     </View>
