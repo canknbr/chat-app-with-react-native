@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, FlatList, View, SafeAreaView } from 'react-native';
+
+import { FlatList} from 'react-native';
 import ChatListItem from '../../components/ChatListItem';
 import chats from '../../../assets/data/chats.json';
 export default function ChatsScreen() {
